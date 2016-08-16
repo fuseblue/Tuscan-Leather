@@ -935,9 +935,12 @@
     <div id="header">
         <div class="wrap">
             <div class="inner">
-                <div class="sidebar-toggle">
-                    <span></span>
-                </div>
+
+                {block:ifsidebar}
+                    <div class="sidebar-toggle">
+                        <span></span>
+                    </div>
+                {/block:ifsidebar}
                 
                 <div class="logo {select:Logo Text}">
                     {block:ifnotlogoimage}
